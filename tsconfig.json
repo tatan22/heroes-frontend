@@ -1,0 +1,19 @@
+{
+	"references": [
+		{ "path": "./tsconfig.app.json" },
+		{ "path": "./tsconfig.node.json" }
+	],
+	"files": [],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"],
+			"@adminPages/*": ["src/admin/pages/*"],
+			"@pages/*": ["src/heroes/pages/*"],
+			"@search/*": ["src/heroes/search/*"]
+		},
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"strict": true
+	}
+}
